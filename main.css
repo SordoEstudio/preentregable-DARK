@@ -201,33 +201,27 @@ h2, h3{
     /* max-width: 500px; */
     /* align-items:center */
     overflow: auto;
-        /* border:1px solid red;*/
-        border-radius: 5px;
+    /* border:1px solid red;*/
+    border-radius: 5px;
     /* background-color: rgb(12, 12, 12);   */
     /* box-shadow: 2px 2px 5px #00e1ff2a; */
 }
 .nav_{
-    height:40vh;
+    /* height:40vh; */
     /* border:solid 2px yellowgreen; */
     display:flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     align-self: center;
 }
 .text{
     padding: 1rem 1rem;
     margin:0 auto;
-    width: 65%;
+    /* width: 65%; */
     border-left:solid 2px var(--color-dark);
     text-align: left;
     font-size: 2.2rem;
         /* border:solid 2px coral;  */
-
-}
-.img{
-    background-color: var(--theme-color);
-    border:solid 1px var(--color-alt);
-    outline: 5px solid var(--theme-color);
 
 }
 
@@ -344,4 +338,24 @@ no va el @media
 }
 .IPF{
     width: 700PX;
+}
+.avatar{
+    width: 15%;
+}
+.card{
+    background-color: inherit;
+    color:var(--text-color);
+    margin:1px
+}
+.card-body{
+justify-content: space-around;
+}
+.piede{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 1rem;;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
 }
