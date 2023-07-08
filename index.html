@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- antes del css--> 
+    <script> 
+    const userTheme = localStorage.getItem("theme");
+    const darkQuery = window.matchMedia("prefers-color-scheme: dark");
+        
+        if(userTheme === "dark" || (!userTheme && darkQuery.matches)){
+            setTheme("dark");
+        } 
+        darkQuery.addEventListener("change",function (e){
+            if(!localStorage.getItem("theme"))
+                setTheme(e.matches ? "dark" : "light");
+        });
+        function setTheme(newTheme){
+        document.documentElement.setAttribute("data-theme", newTheme);
+        }
+    </script> <!---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./images/C_b.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <script src="https://kit.fontawesome.com/7262ef107f.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> -->
+    
+    <script defer src="./togle.js"></script>
+    <title>Sordo Estudio</title>
+</head>
+
+<body>
+<!-------------------------------------------------- HEADER ------------------------------------------------->
+    <header>
+    <section class="hdr">
+        <img class="logo" src="./images/C_b.png" alt="Logo">
+        <h1>Sordo_estudio</h1>
+    </section>
+    <!------------------------------------------- BARRA DE NAVEGACION ----------------------------->
+    <section class="menu">
+        <a class="menu-item" href="#servicios_">Servicios</a>
+        <a class="menu-item" href="#nosotros_">Nosotros</a>
+        <a class="menu-item" href="#trabajos_">Trabajos</a>
+        <!-- <a class="menu-item" href="#ubicacion">Ubicacion</a> -->
+        <a class="menu-item" href="#galeria_">Fotos</a>
+        <a class="menu-item" href="#contacto_">Contacto</a>
+        <button type="button" class="darkmodebtn mode" aria-label="Activar modo oscuro" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Modo Claro"><i class="bi bi-moon"></i></button>
+        <button type="button" class="lightmodebtn mode" aria-label="Activar modo claro" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Modo Oscuro"><i class="bi bi-sun"></i></button>
+        <!-- <span class="material-symbols-outlined">menu</span></a> -->
+    </section>
+    </header>
+
+<!-------------------------------------------------- QUE HACEMOS -------------------------------------------->
+<div id="servicios_" class="div_"></div>
+<section class="titulo" id="servicios">
+    <h3>que_</h3><h2>hacemos?</h2>
+</section>
+
+<section class="container">
+        <span class="nav_">
+            <a href="">PRE-PRODUCCION</a>
+            <a href="">GRABACION</a>
+            <a href="">EDICION</a>
+            <a href="">MEZCLA</a>
+            <a href="">MASTERING</a>
+        </span>
+    <!-- <span class="img">
+        <img class="imagen" src="./images/img.png" alt="" class="qh">
+        </span> -->
+    <span class="text">
+    En Sordo Estudio pensamos la produccion musical de forma holistica.<br>
+    Desde la 
+    <i><a href="" class="pre" >pre-produccion</a></i>
+    , maquetado y trabajo de la idea inicial.<br>           
+    Pasando por la 
+    <a href="" class="grab"><i>grabación</i></a>
+    de voces e instrumentos, su posterior afinación, 
+    <a href="" class="edi"><i>edición</i></a>
+    y <a href="" class="mezcla"><i>mezcla</i></a>.
+    Cerrando con un delaicado proceso de <a href="" class="master"><i>mástering</i></a>.<br>
+    Te acompañamos en todos y cada uno de los pasos para que disfrutes del camino creativo sin preocuparte por las cuestiones técnicas.
+</span>
+            <!--  -->
+        </section>
+<!-------------------------------------------------- QUIENES SOMOS ------------------------------------------>
+<div id="nosotros_" class="div_"></div>
+<section class="titulo" id="nosotros" >
+    <h2>quienes_</h2><h3>somos?</h3>
+</section>    
+<section class="container">
+        <div>
+            <img class="img" src="./images/img.png" alt="foto">
+        </div>
+        <div class="text">
+            <p>El estudio nace en el año 2020 por iniciativa de Pablo Albera (el sordo), Tecnico en Sonido, graduado en Cetear en el año 2015, dj, 
+            operador y fundador de Pa Produciones Audiovisuales, empresa prestadora de servicios para eventos sociales
+            y shows que luego de 10 años de trayectoria muta a Sordo_estudio.<br>
+            Participo ademas en varios poyectos musicales como guitarrista, bajista y baterista. En el año 2022 por intermedio del Gobierno de la provincia de Santa Fe dicta una formacion de Introduccion a la Produccion y Home Studio .<br>
+            Pero no esta solo, de acuerdo a los requerimientos de cada proyecto trabaja junto a musicos, tecnicos, arregladores y couches
+            para que el resultado sea optimo, porque sabemos que los grandes logros no son obra de una sola persona.
+            </p>
+        </div>
+    </section>
+<!-------------------------------------------------- PORTFOLIO ---------------------------------------------->
+<div id="trabajos_" class="div_"></div>
+<section class="titulo"  id="trabajos">
+    <h2>Portfolio</h2>
+    <h3>/ clientes</h3>
+</section>    
+<section class="container">
+        <div>
+            <p class="text">Tenemos la fortuna de trabajar con grandes artistas en proyectos de los mas variados, 
+                aportando desde alguna o todas las etapas de la prodccion.<br>
+                Estos son algunos de los proyectos en los que participamos.
+            </p>
+        </div>
+        
+    </section>
+<!-------------------------------------------------- UBICACION ----------------------------------------------
+<section>
+    <div>
+        <h2>donde</h2>
+        <h3>encontrarnos</h3><br>
+        <h4>San Vicente / Santa Fe / Argentina ***</h4>
+    </div>
+    <div>
+        <- ubicacion en google maps->
+        <img src="images/map.png" alt="Mapa"><iframe src="" frameborder="0"></iframe>
+    </div>
+</section> 
+------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------- GALERIA DE IMAGENES------------------------------------->
+<div id="galeria_" class="div_"></div>
+<section class="titulo" id="galeria" >
+        <h3>Galería</h3>
+    </section>    
+    <section class="galeria">
+    <!-- <div class="galeria"> -->
+        <img class="image" src="images/IMG_0123.JPG" alt="">
+        <img class="image" src="images/IMG_0154.JPG" alt="">
+        <img class="image" src="images/IMG_0155.JPG" alt="">
+        <img class="image" src="images/IMG_0156.JPG" alt="">
+        <img class="image" src="images/IMG_0157.JPG" alt="">
+        <img class="image" src="images/IMG_0160.JPG" alt="">
+        <img class="image" src="images/IMG_0163.JPG" alt="">
+        <img class="image" src="images/IMG_0169.JPG" alt="">
+    <!-- </div> -->
+    </section>
+<!-------------------------------------------------- REDES -------------------------------------------------->
+<div id="contacto_" class="div_"></div>
+<section id="contacto" class="container">
+        <span class="sp1">
+            <div class="titulo">
+                <h2>#redes</h2>
+            </div>
+            <div class="red">
+                <a href="https://wa.me/+543492646942" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                <a href=""><i class="bi bi-telegram"></i> Telegram</a>
+                <a href="https://www.youtube.com/@sordoestudio4118" target="_blank"><i class="bi bi-youtube"></i> Youtube</a>
+                <a href="https://instagram.com/sordo_estudio?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+            </div>
+        </span>
+    <!---------------------------------------- CONTACTO ------------------------------------->
+        <span class="sp2">
+            <div class="titulo">
+                <h3>Contacto</h3>
+            </div>
+            <div>
+                <form action="" class="contacto">
+                <p>Contanos sobre tus ideas y proyectos!</p>
+                <br>
+                <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id=""nombre><br>
+                <label for="email">Em@il</label>
+                    <input type="email" id=""email><br>
+                <label for="Comentarios">Comentarios</label>
+                    <input type="textarea" id="textarea">
+                <input type="submit" id="enviar">
+                </form>
+            </div>
+        </span>
+    </section>
+<!-------------------------------------------------- FOOTER ------------------------------------------------>
+    <footer class="container">
+        <div class="ftr">
+            <img src="./images/C_b.png" alt="logo" class="logo">
+            <h2>Sordo_estudio</h2>
+        </div>
+        <!-- <div>
+            <nav>
+                <ul>
+                <li><a href="">Qué hacemos?</a></li>
+                    <li><a href="">Producción</a></li>
+                    <li><a href="">Grabación</a></li>
+                    <li><a href="">Edición</a></li>
+                    <li><a href="">Mezcla</a></li>
+                    <li><a href="">Mástering</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">Quienes somos?</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Galería de fotos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">Whatsapp</a></li>
+                    <li><a href="">Telegram</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div> -->
+            <!-- ubicacion en google maps-->
+            <!-- <img src="images/map.png" alt="Mapa"><iframe src="" frameborder="0"></iframe> -->
+        </div>
+        <div class="bottom_text">
+            <!-- <p>San Vicente / Santa Fe / Argentina ***</p> -->
+            <p>© Todos los derechos reservados ©2023</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- para agregar boton de cambio a dark mode
+    --en la etiqueta html--
+    <html lang="es" data-theme="light">
+    --boton--
+    <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+    <img></button>
+
+-->
